@@ -4,7 +4,8 @@
 <title>Brownie_world</title>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" >
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!--navigation bar-->
 <style>
@@ -94,14 +95,117 @@ a {
   font-size: 22px;
   color: black;
 }
+<!--contactus-->
+* {
+      box-sizing: border-box;
+      }
+      html, body {
+      min-height: 100vh;
+      padding: 0;
+      margin: 0;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 14px; 
+      color:#171515 ;
+      }
+      input, textarea { 
+      outline: none;
+      }
+      body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      background: #5a7233;
+      }
+     
+      form {
+      position: center;
+      width: 80%;
+      border-radius: 30px;
+      background: #E4B7A0;
+      }
+      
+      .circle {
+      position: absolute;
+      bottom: 80px;
+      left: -55px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #E4B7A0;
+      }
+      .form-inner {
+      padding: 40px;
+      }
+      .form-inner input,
+      .form-inner textarea {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 20px;
+      background: #412516;
+      }
+      .form-inner textarea {
+      resize: none;
+      }
+      button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 20px;
+      border-radius: 20px;
+      border: none;
+      border-bottom: 4px solid #E8BD30;
+      background: #F8CF2C; 
+      font-size: 16px;
+      font-weight: 400;
+      color: black;
+      }
+      button:hover {
+      background: #E8BD30;
+      } 
+      @media (min-width: 568px) {
+      form {
+      width: 60%;
+      }
+      }
+      .center {
+     display: block;
+     margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
 
+<!--icon-->
+.icon-bar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
 
+.icon-bar a {
+  float: left;
+  width: 25%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: #F8CF2C;
+  font-size: 36px;
+}
 
+.icon-bar a:hover {
+  background-color: #935F4C;
+}
 
+.active {
+  background-color: #291211;
+}
 
-</style>
-</head>
-<body>
+     </style>
+    
+    </head>
+    <body>
 
 <div class="navbar">
   <a href="#home">Home</a>
@@ -114,25 +218,20 @@ a {
 
 </style>
 <body>
-
-<!--home page-->
-<header class="BrowniesHome" style="max-width:1600px;min-width:500px" id="home">
-  <img class="BrownieImage" src="Brownie.png" alt="browniesworld" width="1518" height="800">
-  
-    <h1 class="topic"ALIGN="center">Brownies World</h1>
-  </div>
-</header>
-
-
-
+<!-- the home -->
+<div class="aboutusstart" id="home">
+  <div class="home">
+   <img src="Brownie.png" width=1517px height=800px>
+  <body>
+  <br><br>
   <!-- About Section -->
   <div class="aboutusstart" id="about">
     <div class="aboutusimage">
-     <img style="border-style: double;border-color: #1B2C4C;border-radius:20px;border-width:70px"src="abtus.jpg" ALIGN="center"VSPACE="20"HSPACE="200"VSPACE="20"class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="1050" height="600">
-
+      <img src="Brownie (1).png" alt="brownie" class="center">
     </div>
     <div class="aboutuspara">
         <h1 class="abtus" class="underlined_text"ALIGN="center"class="underlined_text"style="font-size:20px"> About our Brownies World</h1><br>
+
         <h5 class="abtus" ALIGN="center" style=font-size:15px >  Proudly present since 2008</h5>
         <p class="abtusparae"ALIGN="center" style="font-size:18px ;">  The Brownies World Café is a well-known cafeteria which sells you various kinds of<br></br> Brownies.
              This café was founded by the Miss.Morksha Rathnayake who is having a great ability to make various kinds of <br></br>
@@ -141,11 +240,12 @@ a {
               And we happy to sat that THE BROWNIES WORLD is ready make you customized Brownies according 
               to your needs.<br></br>
               The ingredients are all healthy and no any allergies<br></br> or harms happen
-        
-    </div>
-    
-    
-  <hr>
+      </div>
+    <hr>
+   
+</head>
+<body>
+
   
   <!-- Menu -->
   <div class="aboutmenu" id="menu">
@@ -282,21 +382,37 @@ a {
 
 
   <!-- Contact Section -->
-  <form action="New Text Document.php" method="GET">
-    <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname" ><br>
-    <label for="lname">Last name:</label><br>
-    <input type="text" id="lname" name="lname"><br><br>
-    <input type="submit" value="Submit">
-  </form> 
+  <div class="aboutcontact" id="contact">
+    
+    <form action="/" class="decor" align:"middle">
+      <div class="form-left-decoration"id="contact"></div>
+      <div class="form-right-decoration"></div>
+      <div class="circle"></div>
+      <div class="form-inner">
+        <h1>Contact us</h1>
+        <input type="text" placeholder="Name of the customer">
+        <input type="text" placeholder="Home address ">
+        <input type="tel" placeholder="telephone">
+        <input type="text" placeholder="Item/s you want to purchase " >
+        <p style="color:black;">--Please note the day which you want the order to be done--</p>
+        <input type="date" placeholder="purchasing date" style="color: #E9DAC4;">
+        <textarea placeholder="Message..." rows="5"></textarea>
+        <button type="submit" href="/">Submit</button>
+        <p style="color:black;">--Scroll down below ,click whatsapp and inform us in there too--</p>
+      </div>
+    </form>
   
   
-  
+  <br><br>
 <!-- End page content -->
+
+<div class="icon-bar">
+  <a class="active" href="https://www.facebook.com/brownies.rasna/"><i class="fa fa-facebook"></i></a> 
+  <a class="active" href="https://www.browiescafe123@gmail.com"><i class="fa fa-google"></i></a> 
+  <a class="active" href="https://www.instagram.com/bownies_world/"><i class="fa fa-instagram"></i></a> 
+  <a class="active" href="#"><i class="fa fa-whatsapp"></i></a>
+ 
 </div>
-
-
-
-
-
+  
 </body>
+</html>
