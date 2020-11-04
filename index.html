@@ -447,24 +447,25 @@ button:hover, a:hover {
   <!-- Contact Section -->
   <div class="aboutcontact" id="contact">
     
-    <form action="/" class="decor" align:"middle">
+    <form action="form1.php" method="POST" class="decor" align:"middle" name="form1">
       <div class="form-left-decoration"id="contact"></div>
       <div class="form-right-decoration"></div>
       <div class="circle"></div>
       <div class="form-inner">
         <h1>Contact us</h1>
-        <input type="text" placeholder="Name of the customer" style="color:#F3E1C0">
-        <input style="color:#F3E1C0" type="text" placeholder="Home address ">
-        <input style="color:#F3E1C0" type="tel" placeholder="telephone">
-        <input  style="color:#F3E1C0"type="text" placeholder="Item/s you want to purchase " >
+        <input type="text" placeholder="Name of the customer" name="name"style="color:#F3E1C0">
+        <input style="color:#F3E1C0" type="text" placeholder="Home address " name="address">
+        <input style="color:#F3E1C0" type="tel" placeholder="telephone" name="tele">
+        <input  style="color:#F3E1C0"type="text" placeholder="Item/s you want to purchase " name="num" >
         <p style="color:black;">--Please note the day which you want the order to be done--</p>
-        <input  type="date" placeholder="purchasing date" style="color: #E9DAC4;">
-        <textarea style="color:#F3E1C0" placeholder="Message..." rows="5"></textarea>
+        <input  type="date" placeholder="purchasing date" style="color: #E9DAC4;" name="when">
+        <textarea style="color:#F3E1C0" placeholder="Message..." rows="5" name="message"></textarea>
         <button type="submit" href="/">Submit</button>
         <p style="color:black;">--Scroll down below ,click whatsapp and inform us in there too--</p>
       </div>
     </form>
-  
+
+    
   
   <br><br>
 <!-- End page content -->
